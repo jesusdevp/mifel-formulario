@@ -28,7 +28,7 @@ export const UserMap = () => {
     }, []);
 
     return (
-        <div className="w-full h-[500px] mt-10 rounded-lg overflow-hidden shadow-md">
+        <div className="max-w-6xl mx-auto h-[500px] mt-10 rounded-lg overflow-hidden shadow-md">
             <MapContainer
                 center={[20.6736, -103.344]}
                 zoom={2}

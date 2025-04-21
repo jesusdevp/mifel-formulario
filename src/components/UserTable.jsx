@@ -72,7 +72,7 @@ export const UserTable = () => {
     };
 
     return (
-        <div className="mt-10 overflow-x-auto rounded-xl shadow-md bg-white">
+        <div className="max-w-6xl mx-auto mt-10 overflow-x-auto rounded-xl shadow-md bg-white">
             <h2 className="text-lg font-semibold mb-4 px-4 pt-4">
                 Tabla de usuarios
             </h2>
