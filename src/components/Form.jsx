@@ -30,6 +30,8 @@ export const Form = () => {
 
     const [errors, setErrors] = useState({});
 
+    console.log({ formState })
+
 
     const handleSubmit = async () => {
         const isValid = validateFields(formState, setErrors);
@@ -121,7 +123,7 @@ export const Form = () => {
 
                     <InputField
                         label="Segundo apellido"
-                        name="sgundoApellido"
+                        name="segundoApellido"
                         value={formState.segundoApellido}
                         onChange={onInputChange}
                         error={errors.segundoApellido}
@@ -155,7 +157,7 @@ export const Form = () => {
 
                 <div className="w-full grid grid-cols-2 gap-6">
                     <InputField
-                        label="Codigo Postal"
+                        label="Código Postal"
                         name="codigoPostal"
                         value={formState.codigoPostal}
                         onChange={onInputChange}
@@ -177,8 +179,8 @@ export const Form = () => {
 
                 <div className="w-full grid grid-cols-3 gap-6">
                     <InputField
-                        label="Numero exterior"
-                        name="codigoPostal"
+                        label="Número Exterior"
+                        name="numeroExterior"
                         value={formState.numeroExterior}
                         onChange={onInputChange}
                         error={errors.numeroExterior}
@@ -187,7 +189,7 @@ export const Form = () => {
                     />
 
                     <InputField
-                        label="Numero interior"
+                        label="Número interior"
                         name="numeroInterior"
                         value={formState.numeroInterior}
                         onChange={onInputChange}
@@ -211,7 +213,7 @@ export const Form = () => {
 
                 <div className="w-full grid grid-cols-2 gap-6">
                     <InputField
-                        label="Delegacion / Municipio"
+                        label="Delegación / Municipio"
                         name="delegacion"
                         value={formState.delegacion}
                         onChange={onInputChange}
